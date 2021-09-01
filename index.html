@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css  ">
 </head>
 
 <body>
@@ -28,24 +29,24 @@
     <h2>@container</h2>
 
     <h3>Fluid container</h3>
-    <div>This is a field container and it it will go till the end of the page</div>
+    <div class="container-fluid">This is a field container and it it will go till the end of the page</div>
 
     <h3>Center container</h3>
-    <div>This is a fluid container and it will go till the specified width</div>
+    <div class="container-center">This is a fluid container and it will go till the specified width</div>
 
     <hr>
 
     <h2>@Links</h2>
-    <a href="https://google.com">Google</a>
-    <a href="/">Secondary Link</a>
+    <a class="link primary-link" href="/">Primary Link</a>
+    <a class="link secondary-link" href="/">Secondary Link</a>
 
     <hr>
 
     <h2>@lists</h2>
 
     <h3>Unordered Lists</h3>
-
-    <ul>
+    <h4>This list will not have any bullets</h4>
+    <ul class="list-non-bullet">
         <li>Item One</li>
         <li>Item two</li>
         <li>Iter three</li>
@@ -53,14 +54,14 @@
 
     <h3>Unordered Inline list</h3>
 
-    <ul>
-        <li>Inline Item one</li>
-        <li>Inline Item two</li>
-        <li>Inline it three</li>
+    <ul class="list-item-inline">
+        <li class="list-item-inline">Inline Item one</li>
+        <li class="list-item-inline">Inline Item two</li>
+        <li class="list-item-inline">Inline it three</li>
     </ul>
 
     <h3>Reverse ordered Lists</h3>
-    <ol>
+    <ol reversed>
         <li>Milk</li>
         <li>Egg</li>
         <li>Meat</li>
@@ -70,17 +71,17 @@
 
     <h2>@nav</h2>
 
-    <nav>
-        <div>Brand</div>
-        <ul>
-            <li>
-                <a href="/">Home</a>
+    <nav class="navigation">
+        <div class="nav-brand">Brand</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline link-active">
+                <a href="/" class="link">Home</a>
             </li>
-            <li>
-                <a href="/">Products</a>
+            <li class="list-item-inline">
+                <a href="/" class="link">Products</a>
             </li>
-            <li>
-                <a href="/ ">about</a>
+            <li class="list-item-inline">
+                <a href="/ " class="link">about</a>
             </li>
         </ul>
     </nav>
@@ -88,23 +89,34 @@
     <hr>
 
     <h2>header</h2>
-    <header>
-        <img src="https://dl3.pushbulletusercontent.com/Lh0QyxviAsg1C08RHQw6Bl4Qk4vMQEEF/IMG_20200625_173710_391.jpg"
-            alt="BEAUTIFUL PIC OF LORD MANOJ" width="200px" height=auto>
-    </header>
+    <header class="hero">
+        <img class="hero-img" src="img/hero.svg" alt="BEAUTIFUL PIC OF LORD MAN OJ">
 
-    <section>
-        <h2>@Sections</h2>
-        <p>This will go end to end with some margin</p>
+        <h3 class="hero-header">Manoj Bhat { <span class="heading-inverted">} Web Developer</span></h3>
+    </header>
+    <hr>
+    <h2>@Sections</h2>
+    <section class="white-section">
+        <div class="container">
+        <h3>White Section</h3>
+        <p>This will have white background</p>
+        </div>
+    </section>
+    <section class="black-section">
+        <div class="container">
+        <h3>Off White Section</h3>
+        <p>This will have grey background</p>
+        </div>
     </section>
 
+    <hr>
     <h2>@Footer</h2>
     <footer>
-        <div>Some small heading inside footer</div>
-        <ul>
-            <li>socialone</li>
-            <li>socialtwo</li>
-            <li>socialthree</li>
+        <div class="footer-header">Some small heading inside footer</div>
+        <ul class="social-links primary-link" >
+            <li class="list-item-inline"><a href="" class="link">LinkedIn</a></li>
+            <li class="list-item-inline"><a href="" class="link">Twitter</a></li>
+            <li class="list-item-inline"><a href="" class="link">Github</a></li>
         </ul>
     </footer>
 </body>
