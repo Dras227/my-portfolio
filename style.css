@@ -8,37 +8,47 @@
 }
 
 body {
-    font-family: 'Montserrat', 'sans-serif';
-    margin:0px;
+     font-family: "Montserrat",
+     sans-serif;
+     margin: 0px auto;
+     max-width: 85%;
+     width: 100%;
 }
 
 .container {
-    padding-left: 1 rem;
-    padding-right: 1 rem;
+    padding:0rem 1rem; 
 }
 
 .container-center {
-    max-width: 600px;
+    max-width: 900px;
     margin: auto;
+    width:100%;
 }
 
 .link {
+    box-sizing: border-box;
+
     text-decoration: none;
-    padding: 0.5 rem 1rem;
+    padding: 0.5rem 1rem;
 }
 
 .link-primary {
+    max-width: 140px;
+    padding: 0.6rem 1.2rem;
     background-color: var(--primary-color);
-    border-radius: 0.5rem;
-    color: white;
+    color: #fff;
+    margin: 1rem auto;
+    border-radius: 2rem;
 }
 
 
 /*LOOK INTO bem naming conventions for css*/
 .link-secondary {
-    background-color: var(--primary-color);
+    background-color: white;
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
+    max-width: 140px;
+    margin: 1rem;
 }
 
 /* lists */
@@ -62,6 +72,7 @@ border-bottom-left-radius: 1rem;
 .nav-brand {
     font-weight: bold;
     font-size:1.1rem;
+    font-style: italic;
 }
 .navigation .nav-pills {
     text-align: right;
@@ -73,21 +84,22 @@ border-bottom-left-radius: 1rem;
 .navigation .link {
     color:white;
 }
-
 .hero {
     padding:2rem;
 }
 
 .hero-img {
-    max-width:350px;
+    max-width:450px;
     display:block;
     margin:auto;
+    margin-top: 1.3rem;
 }
 .hero-header {
     text-align: center;
-    margin:2rem;
+    margin:1rem;
     color: var(--dark-gray);
     font-size: 2rem;
+    margin-bottom: 2rem;
 }
 .heading-inverted {
     color:var(--dark-blue);
@@ -98,7 +110,7 @@ border-bottom-left-radius: 1rem;
     text-align: center;
     padding: 1.1rem;
 }
-.black-section h3 {
+.black-section  {
     text-align: center;
     padding: 1.1rem;
     background-color: var(--off-white);
@@ -123,6 +135,7 @@ footer {
     padding:2rem 1rem;
     border-top-right-radius: 2rem;
     display: block;
+    margin-top: 60px;
 }
 
 footer .link{
@@ -131,4 +144,22 @@ footer .link{
 
 footer ul{
         padding-inline-start:0px;
+}
+
+
+
+
+.footer-header{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.container-center {
+ margin-bottom: 3rem;   /* text-align: center; */
+}
+
+
+
+section {
+    margin-bottom: 3rem;
 }
