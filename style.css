@@ -155,11 +155,30 @@ footer ul{
 }
 
 .container-center {
- margin-bottom: 3rem;   /* text-align: center; */
+ margin-bottom: 3rem;   
+ text-align: center;
+ border-radius: 30px;
 }
 
 
 
 section {
     margin-bottom: 3rem;
+}
+
+.container-center a {
+    margin-top: 400px;
+}
+
+/* this media query and some of the stylings copied from adarsh-balika github */
+@media (max-width: 900px) {
+    
+
+    .container-center {
+        width: auto;
+    }
+
+    .link-primary {
+        display: block;
+    }
 }
