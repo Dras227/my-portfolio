@@ -34,6 +34,7 @@ body {
 
 .link-primary {
     max-width: 140px;
+
     padding: 0.6rem 1.2rem;
     background-color: var(--primary-color);
     color: #fff;
@@ -89,10 +90,10 @@ border-bottom-left-radius: 1rem;
 }
 
 .hero-img {
-    max-width:450px;
-    display:block;
-    margin:auto;
-    margin-top: 1.3rem;
+    max-width: 80%;
+    width: 550px;
+    display: block;
+    margin: auto;
 }
 .hero-header {
     text-align: center;
@@ -170,15 +171,41 @@ section {
     margin-top: 400px;
 }
 
-/* this media query and some of the stylings copied from adarsh-balika github */
+.showcase-list {
+    /* padding: 2rem; */
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.showcase-list h1 {
+    margin: 0.5rem;
+}
+
+.showcase-list p {
+    padding-bottom: 1rem;
+}
+.ow {
+    background-color: var(--off-white);
+}
+
 @media (max-width: 900px) {
-    
+    body {
+        max-width: 95%;
+        width: 100%;
+    }
+
+    .list-item-inline {
+        display: inline;
+        padding: 0rem;
+    }
 
     .container-center {
         width: auto;
     }
 
     .link-primary {
-        display: block;
+        
     }
 }
